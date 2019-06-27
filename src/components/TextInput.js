@@ -2,7 +2,16 @@ import React from "react";
 import "./TextInput.css";
 
 function TextInput(props) {
-  const { id, title, value, type, onChange, className, onBlur } = props;
+  const {
+    id,
+    title,
+    value,
+    type,
+    onChange,
+    className,
+    onBlur,
+    errorMessage
+  } = props;
   const css = "textinput" + (className ? " text-error" : "");
   const spanCss = className ? "text-error-msg" : "text-no-error";
   const spanId = id + "_error";
@@ -22,7 +31,7 @@ function TextInput(props) {
         className={css}
       />
       <span id={spanId} className={spanCss} aria-live="assertive">
-        Invalid input!
+        {errorMessage}
       </span>
     </div>
   );

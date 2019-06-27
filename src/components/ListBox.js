@@ -24,8 +24,9 @@ function ListBox(props) {
         aria-describedby={spanId}
         className={css}
         onBlur={onBlur}
+        defaultValue="initial"
       >
-        <option selected hidden disabled aria-hidden>
+        <option value="initial" hidden disabled aria-hidden>
           Choose an option
         </option>
         {optionList}
