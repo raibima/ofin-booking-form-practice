@@ -1,0 +1,23 @@
+.list-select {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.list-error {
+  border: 1px solid red;
+}
+
+.list-error-msg {
+  display: initial;
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.list-no-error {
+  display: none;
+}
+
+.inputField {
+  margin-bottom: 10px;
+}
